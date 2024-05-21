@@ -54,8 +54,8 @@
         headers.append("Content-Type", "application/json");
 
         const body = {
-            method: "POST",
-            body: json.stringify(payload),
+            method: 'POST',
+            body: JSON.stringify(payload),
             headers: headers
         }
         fetch("http:\/\/localhost:8080/handle", body)
@@ -72,7 +72,6 @@
             .catch((error) => {
                 output.innerHTML += "<br><br>Error: " + error;
             })
-
     })
 
     authBrokerBtn.addEventListener("click", function () {
