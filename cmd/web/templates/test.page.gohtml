@@ -44,8 +44,10 @@
     let output = document.getElementById("output");
     let sent = document.getElementById("payload");
     let recevied = document.getElementById("received");
-    let brokerURL = "{{.BrokerURL }}";
+
+    let brokerURL = {{.BrokerURL}};
     console.log(brokerURL)
+
     mailBtn.addEventListener("click", function () {
 
         const payload = {
